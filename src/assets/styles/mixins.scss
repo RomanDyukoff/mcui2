@@ -28,6 +28,10 @@
 @mixin size($width, $height: $width) {
   height: $height;
   width: $width;
+  min-height: $height;
+  min-width: $width;
+  max-height: $height;
+  max-width: $width;
 }
 @function _unpack-shorthand($shorthand) {
   @if length($shorthand) == 1 {
